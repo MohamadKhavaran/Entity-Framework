@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{A6280EEF-EED7-434E-B57E-6FA5B9A7FD88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{0FC0330D-9663-465F-9F2B-6805034F390D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A6280EEF-EED7-434E-B57E-6FA5B9A7FD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6280EEF-EED7-434E-B57E-6FA5B9A7FD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6280EEF-EED7-434E-B57E-6FA5B9A7FD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC0330D-9663-465F-9F2B-6805034F390D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC0330D-9663-465F-9F2B-6805034F390D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC0330D-9663-465F-9F2B-6805034F390D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC0330D-9663-465F-9F2B-6805034F390D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

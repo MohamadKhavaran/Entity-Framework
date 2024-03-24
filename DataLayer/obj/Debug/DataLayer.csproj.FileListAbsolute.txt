@@ -1,0 +1,11 @@
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.pdb
