@@ -9,3 +9,4 @@ C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.
 C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
 C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.dll
 C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Modern\Documents\GitHub\Entity-Framework\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache

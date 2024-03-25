@@ -8,6 +8,14 @@ namespace DataLayer.Repository
 {
     public interface IPersonRepository
     {
-        void insert(Person person);
+        void Insert(Person person);
+
+        Person GetById(int Id);
+
+        void Update(Person person);
+
+        void Delete(Person person);
+
+        void DeleteById(int Id);
     }
 }

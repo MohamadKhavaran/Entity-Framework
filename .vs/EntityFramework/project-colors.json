@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a6280eef-eed7-434e-b57e-6fa5b9a7fd88": {
+      "ProjectGuid": "a6280eef-eed7-434e-b57e-6fa5b9a7fd88",
+      "DisplayName": "EntityFramework",
+      "ColorIndex": 0
+    },
+    "0fc0330d-9663-465f-9f2b-6805034f390d": {
+      "ProjectGuid": "0fc0330d-9663-465f-9f2b-6805034f390d",
+      "DisplayName": "DataLayer",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

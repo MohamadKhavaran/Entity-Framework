@@ -15,21 +15,47 @@ namespace EntityFramework
 {
     public partial class Form1 : Form
     {
+        MarketDBEntities _context;
+        IPersonRepository _repository;
         public Form1()
         {
+            _context = new MarketDBEntities();
+            _repository = new PersonRepository(_context);
             InitializeComponent();
         }
 
         private void AddPerson_Click(object sender, EventArgs e)
         {
-            MarketDBEntities context = new MarketDBEntities();
-            IPersonRepository repository = new PersonRepository(context);
             Person person = new Person()
             {
                 FirstName = "محمد حسین",
                 LastName = "خاوران"
             };
-            repository.insert(person);
+            _repository.Insert(person);
+        }
+
+        private void UpdatePerson_btn_Click(object sender, EventArgs e)
+        {
+            var person = _repository.GetById(1);
+            person.FirstName = "آیدا";
+            _repository.Update(person);
+        }
+
+        private void DeletePerson_btn_Click(object sender, EventArgs e)
+        {
+            _repository.DeleteById(1);
+        }
+
+        private void DeletePerson_btn2_Click(object sender, EventArgs e)
+        {
+            var person = _repository.GetById(2);
+            _repository.Delete(person);
+        }
+
+        private void DisplayPerosn_btn_Click(object sender, EventArgs e)
+        {
+            var person = _repository.GetById(3);
+            MessageBox.Show(person.FirstName + " " + person.LastName);
         }
     }
 }
