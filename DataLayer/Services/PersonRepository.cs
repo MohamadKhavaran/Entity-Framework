@@ -11,19 +11,14 @@ namespace DataLayer.Services
     public class PersonRepository : IPersonRepository
     {
         MarketDBEntities _context;
-        public PersonRepository(MarketDBEntities Context)
+        public PersonRepository(MarketDBEntities Context) 
         {
             _context = Context;
         }
 
-        private void Save()
-        {
-            _context.SaveChanges();
-        }
         public void Insert(Person person)
         {
             _context.People.Add(person);
-            Save();
         }
 
         public Person GetById(int Id)
@@ -35,19 +30,16 @@ namespace DataLayer.Services
         {
             // Update Perosn
             _context.Entry(person).State = EntityState.Modified;
-            Save();
         }
 
         public void Delete(Person person)
         {
             _context.Entry(person).State = EntityState.Deleted;
-            Save();
         }
         public void DeleteById(int Id)
         {
             var person = GetById(Id);
             Delete(person);
-            Save();
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -15,12 +14,13 @@ namespace EntityFramework
 {
     public partial class Form1 : Form
     {
-        MarketDBEntities _context;
-        IPersonRepository _repository;
+        //MarketDBEntities _context;
+        //IPersonRepository _repository;
+        UnitOfWork context = new UnitOfWork(); 
         public Form1()
         {
-            _context = new MarketDBEntities();
-            _repository = new PersonRepository(_context);
+            //_context = new MarketDBEntities();
+            //_repository = new PersonRepository(_context);
             InitializeComponent();
         }
 
@@ -28,34 +28,38 @@ namespace EntityFramework
         {
             Person person = new Person()
             {
-                FirstName = "محمد حسین",
-                LastName = "خاوران"
+                FirstName = "مینا",
+                LastName = "حسینی"
             };
-            _repository.Insert(person);
+            context.PersonRepository.Insert(person);
+            context.Save();
         }
 
         private void UpdatePerson_btn_Click(object sender, EventArgs e)
         {
-            var person = _repository.GetById(1);
+            var person = context.PersonRepository.GetById(1);
             person.FirstName = "آیدا";
-            _repository.Update(person);
+            context.PersonRepository.Update(person);
+            context.Save();
         }
 
         private void DeletePerson_btn_Click(object sender, EventArgs e)
         {
-            _repository.DeleteById(1);
+            context.PersonRepository.DeleteById(1);
+            context.Save();
         }
 
         private void DeletePerson_btn2_Click(object sender, EventArgs e)
         {
-            var person = _repository.GetById(2);
-            _repository.Delete(person);
+            var person = context.PersonRepository.GetById(2);
+            context.PersonRepository.Delete(person);
+            context.Save();
         }
 
         private void DisplayPerosn_btn_Click(object sender, EventArgs e)
         {
-            var person = _repository.GetById(3);
-            MessageBox.Show(person.FirstName + " " + person.LastName);
+            var person = context.PersonRepository.GetById(3);
+            MessageBox.Show(person.FirstName + " " + person.LastName); 
         }
     }
 }
